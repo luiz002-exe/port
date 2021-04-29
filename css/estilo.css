@@ -1,0 +1,127 @@
+h1 , h2 , h3 , h4 , h5 , h6{
+    font-family: 'Gloria Hallelujah', cursive;
+    margin: 0;
+    
+}
+
+h2 , p{
+    color: greenyellow;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+header{
+    background-color:gold;
+    padding: 2px;
+    color: skyblue;
+}
+
+footer{
+   clear: both;
+   
+}
+
+footer p{
+    text-align: center;
+}
+
+footer iframe{
+    display: block;
+    margin: 0 auto;
+}
+
+/* regras para colunas e aparência do cabeçalho e menu */
+
+.logo{
+    float: left;
+    width: 40%;
+}
+
+header nav{
+    float: right;
+    width: 60%;
+}
+
+header{
+    height: 70px;
+}
+
+/* menu principal */
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li, header nav il li a{
+ display: inline-block;
+}
+
+header nav ul li{
+    margin: 0 15px 0 0;
+}
+
+header nav ul li a{
+   background-color:gold;
+   padding: 5px;
+   color:lightskyblue;
+   text-decoration: none;
+}
+ 
+header nav ul li a:hover{
+    background-color:white;
+    color: rgb(29, 160, 29);
+}
+
+header nav ul li a{
+    font-family: 'Mrs Sheppards', cursive;
+}
+
+.conteudo{
+    /* limpa a flutuaçao existente nos elementos do  header */
+    clear: both;
+    padding: 20px;
+}
+
+.coluna1{
+    width:25%;
+    float: left;
+    margin-bottom: 40px;
+}
+
+.coluna2{
+    width: 69%;
+    float: right;
+    margin-bottom: 40px;
+    border-left: 4px solid gold;
+    padding-left: 50px;
+}
+
+
+/* modificar o comportamento das colunas e menu quando acessado no celular */
+
+@media screen and (max-width:576px) {
+    .coluna1, .coluna2{
+    float: none;
+    width: 100% !important;
+
+ }
+ .coluna2{
+    padding: 0;
+    border:none;
+}
+
+.logo, header nav{
+    float: none;
+    width: 100%;
+
+}
+header{
+    height: auto;
+}
+.logo h1{
+    font-size: 1em;
+ }
+}
